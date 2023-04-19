@@ -1,0 +1,44 @@
+.app-header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  .nav-home-logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    img {
+      width: 75px;
+      height: 47px;
+    }
+    span {
+      margin-left: -12px;
+      color: #fe6a6f;
+      text-decoration: none;
+      font-weight: 900;
+      font-size: 24px;
+    }
+  }
+
+  .nav-search-filter {
+    min-width: 348px;
+    // border: 1px solid;
+    height: 48px;
+    border-radius: 50px;
+    border: 1px solid #0000001a;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .nav-user-setting {
+    // width: 200px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
