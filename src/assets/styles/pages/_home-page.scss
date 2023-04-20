@@ -1,0 +1,18 @@
+.home-page {
+  margin-top: 10px;
+  // padding: 10px;
+  .filter-container {
+    background-color: #fff;
+    padding-top: 0.5rem;
+    position: sticky;
+    top: 78px;
+    z-index: 1;
+    .wrapper{
+        grid-gap: 1.5rem;
+    align-items: center;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr auto;
+    }
+  }
+}

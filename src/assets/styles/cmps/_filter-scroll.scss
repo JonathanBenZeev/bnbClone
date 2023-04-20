@@ -1,0 +1,33 @@
+.filter-scroll {
+  display: flex;
+  white-space: nowrap;
+  height: 95px;
+  overflow-y: hidden;
+//   position: relative;
+
+  .filter-item-list {
+    // overflow-y: hidden;
+    gap: 3rem;
+    height: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+.filter-preview {
+      position: relative;
+    align-items: center;
+    opacity: .8;
+    img {
+      width: rem(28px);
+      height: rem(28px);
+      margin-top: 0.25rem;
+    }
+    p {
+      font-size: rem(12px);
+      margin-top: 0.6rem;
+      color: #717171;
+      font-size: 0.85em;
+      line-height: 1;
+    }
+  }
+}

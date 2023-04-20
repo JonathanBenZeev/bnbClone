@@ -21,7 +21,7 @@ body {
 .App{
   // margin: 0;
   margin: auto;
-  max-width: 1024px;
+  max-width: rem(1344px) ;
 }
 
 h1,
@@ -33,6 +33,7 @@ h6 {
   font-family: caveat;
   margin: 0 0 0.6em;
   line-height: 1;
+  overflow-wrap: break-word;
 }
 
 section,
@@ -47,6 +48,7 @@ img {
 
 p {
   margin: 0 0 1em;
+  overflow-wrap: break-word;
 }
 
 a {
@@ -55,4 +57,16 @@ a {
 }
 a:hover {
   text-decoration: underline;
+}
+
+
+hr{
+  margin: 0;
+  margin-top: 5px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border: 1px solid #0000001a;
+ 
 }

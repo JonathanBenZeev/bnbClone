@@ -5,8 +5,9 @@
 @import 'setup/typography';
 //Basics
 @import 'basics/base';
+@import 'basics/helpers';
 //Pages
-
+@import 'pages/home-page';
 //Components
-@import 'cmps/app-header'
-
+@import 'cmps/app-header';
+@import 'cmps/filter-scroll';
