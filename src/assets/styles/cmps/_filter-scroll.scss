@@ -3,20 +3,42 @@
   white-space: nowrap;
   height: 95px;
   overflow-y: hidden;
-//   position: relative;
+  //   position: relative;
 
+  .scroll-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 10px;
+    background-color: #fff;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    border: #717171 solid 1px;
+    opacity: 1;
+    &.hidden {
+      opacity: 0;
+    }
+    svg {
+      box-sizing: border-box;
+      display: revert;
+      vertical-align: middle;
+    }
+  }
   .filter-item-list {
-    // overflow-y: hidden;
+    overflow-y: hidden;
     gap: 3rem;
     height: 100%;
-    overflow-x: scroll;
     scroll-behavior: smooth;
     width: 100%;
-}
-.filter-preview {
-      position: relative;
+    overflow-x: hidden;
+  }
+  .filter-preview {
     align-items: center;
-    opacity: .8;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 0.2s all cubic-bezier(0.075, 0.82, 0.165, 1);
+
     img {
       width: rem(28px);
       height: rem(28px);
@@ -28,6 +50,13 @@
       color: #717171;
       font-size: 0.85em;
       line-height: 1;
+    }
+    &:hover{
+        opacity: 1;
+        border-bottom: 1px solid #ddd;
+    }
+    &.active{
+        transform: scale(0.95);
     }
   }
 }
