@@ -22,6 +22,20 @@ export interface IStay {
   region: string
 }
 
+export interface IStayPreview {
+  _id: string
+  name: string
+  type: string
+  imgUrls: string[]
+  price: number
+  isSuperHost: boolean
+  loc: ILocation
+  // avgRate: string
+  filters: string[]
+  region: string
+  // likedByUser: boolean;
+}
+
 export interface ILocation {
   country: string
   countryCode: string
