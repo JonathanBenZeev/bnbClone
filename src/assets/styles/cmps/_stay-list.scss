@@ -1,4 +1,11 @@
 .stay-list{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 280px);
+    gap :0.7em;
+    @media ( min-width :1360px){
+        grid-template-columns: repeat(4, 318px);
+
+   }
+
+
 }

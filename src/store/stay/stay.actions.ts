@@ -5,10 +5,9 @@ import { query } from '../../services/stay.service'
 import { store } from '../store'
 
 export async function loadStays() {
-    // store.dispatch<StayAction>({ type: 'SET_IS_LOADING', isLoading: true })
+    store.dispatch<StayAction>({ type: 'SET_IS_LOADING', isLoading: true })
     try {
         const stays = (await query()) ||[]
-        console.log('stays', stays)
         store.dispatch<StayAction>({ type: 'SET_STAYS', stays })
     } catch (err) {
         console.log('StayActions: Had issues loading stays', err)

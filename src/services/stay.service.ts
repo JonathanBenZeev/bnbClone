@@ -13,6 +13,8 @@ _initStays()
 export async function query() {
   try {
     let stays = (await storageService.query(STAY_DB_KEY)) as IStay[]
+    // console.log(stays);
+
     let stayPreviews: IStayPreview[] = stays.map((stay: IStay) =>
       _arrangePreviewData(stay)
     )
@@ -20,6 +22,16 @@ export async function query() {
   } catch (err) {
     console.log('err:', err)
   }
+}
+
+// export async function get(stayId: string) {
+//   try {
+//     let stays = (await storageService.query(STAY_DB_KEY)) as IStay[]
+//     return stays.filter((stay:IStay) => stay._id === stayId)
+//   } catch (err) {}
+// }
+export async function get(stayId: string) {
+  return storageService.get(STAY_DB_KEY, stayId) as Promise<IStay>
 }
 
 export function getFiltersI(): IFilter[] {
